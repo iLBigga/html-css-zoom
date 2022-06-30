@@ -24,7 +24,7 @@ main {
     background-color: black;
     color: white;
     flex-grow: 1;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .row {
