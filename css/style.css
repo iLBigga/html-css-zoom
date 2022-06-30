@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    display: block;
+}
+
+main {
+    /* flex-grow: 1; */
+    background-color: black;
+    color: white;
+}
+
+/* Main */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px 6px;
+    padding: 77px 87px 27px 87px;
+    margin: 0 auto;
+}
+
+.col {
+    position: relative;
+}
+
+.user_name {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+
+
+/* Footer */
+
+menu {
+    background-color: #222222;
+    height: 100px;
+}
