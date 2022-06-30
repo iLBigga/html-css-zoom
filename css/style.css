@@ -4,6 +4,11 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
 body {
     display: flex;
     flex-direction: column;
