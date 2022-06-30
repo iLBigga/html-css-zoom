@@ -7,6 +7,7 @@
 body {
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 
 img {
@@ -14,10 +15,11 @@ img {
     max-width: 100%;
 }
 
-main {
-    /* flex-grow: 1; */
+main {    
     background-color: black;
     color: white;
+    flex-grow: 1;
+    overflow: hidden;
 }
 
 .row {
@@ -26,9 +28,25 @@ main {
 
 /* Main */
 
+.card_view {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+}
+
+.card_view_item {
+    background-color: rgba(207, 207, 207, 0.3);
+    padding: 5px; 
+    border-radius: 10px;
+}
+
 .card_section {
     padding: 77px 87px 27px 87px;
-    margin: 0 auto;
 }
 
 .row.card{
@@ -46,7 +64,7 @@ main {
     bottom: 0px;
     left: 0px;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(207, 207, 207, 0.3);
 }
 
 
@@ -55,28 +73,22 @@ main {
 
 
 .row.main_footer{
-    padding: 20px;
-    display: flex;
     justify-content: space-between;
-}
-
-
-menu {
     background-color: #222222;
     color: white;
-}
-
-
-.input_menu {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+    padding-left: 10px;
 }
 
 .menu{
     display: flex;
     gap: 20px;
+}
+
+.input_menu {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 .icon_text, .angle-up {
